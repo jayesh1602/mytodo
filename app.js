@@ -54,7 +54,7 @@ app.get("/", (req, res) => {
 //dynamic routes in express
 app.get("/:customList", (req, res) => {
   const dynamicRoute = req.params.customList;
-  console.log(dynamicRoute);
+  // console.log(dynamicRoute);
 });
 
 app.post("/", (req, res) => {
@@ -71,7 +71,7 @@ app.post("/", (req, res) => {
 
 app.post("/delete", (req, res) => {
   const checkdoff = req.body.checkbox;
-  console.log(checkdoff);
+  // console.log(checkdoff);
 
   //for removing an list by its id
   Item.findByIdAndRemove(checkdoff, function (err) {
