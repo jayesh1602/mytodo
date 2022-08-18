@@ -1,0 +1,24 @@
+1.)
+
+require ==> express,body-parser
+
+res.write() , for more lines of code to written...
+
+ejs ==> embaded js templating.. 
+
+res.render() ==> for sending ejs file 
+
+4.) 
+
+res.render("list", { weekday: "saturday" });
+ 
+in list.ejs in views folder
+
+<h1> thist is <%= weekday %> </h1>
+
+
+
+for logic in html file , use <% %> tag for each line
+
+
+__> name field is useful for accesing the its value from post request , by body-parser .
